@@ -12,6 +12,7 @@ app.set("view engine", "ejs");
 
 //use는 미들웨어를 등록하는 메서드
 app.use("/", home); 
+app.use(express.static(`${__dirname}/src/public`));
 
 //bin에서 서버를 띄우는 메서드를 보내는걸 받아야해서 여기서도 보내야함
 module.exports = app;

@@ -22,10 +22,10 @@ function login(){
     fetch("/login",{
         method: "POST",
         headers:{
-            "Content-Type": "application/json" //내가 보내는 데이터의 타입
+            "Content-Type": "application/json", //내가 보내는 데이터의 타입
         },
-        body: JSON.stringify(req)
-    })
+        body: JSON.stringify(req),
+    });
 }
 
 

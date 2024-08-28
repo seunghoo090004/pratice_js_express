@@ -14,5 +14,18 @@ function login(){
         psword: psword.value, 
     };
     //위에 해당하는 값을 서버에 전달 -> fetch();
-    console.log(req);
+    //서버 프론트 해당데이터를 어떤 경로를 통해서 데이터를 주고 받을지 설정해줘야함
+    // API(주소)가 있어야함
+
+
+
+    fetch("/login",{
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json" //내가 보내는 데이터의 타입
+        },
+        body: JSON.stringify(req)
+    })
 }
+
+

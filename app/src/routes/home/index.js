@@ -10,5 +10,6 @@ const ctrl = require("./home.ctrl");
 router.get("/", ctrl.hello);
 router.get("/login", ctrl.login);
 
+
 //이 라우터를 외부에서 사용할 수 있게 해주는 명령어
 module.exports = router;

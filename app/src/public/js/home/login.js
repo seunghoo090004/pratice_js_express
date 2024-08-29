@@ -1,5 +1,5 @@
 "use strict"
-
+//프론트엔드
 const id = document.querySelector("#id"),
     psword = document.querySelector("#psword"),
     loginBtn = document.querySelector("button");
@@ -18,14 +18,19 @@ function login(){
     // API(주소)가 있어야함
 
 
-
+//fetch로 전달을 했음.
+//서버에서 응답한 데이터를 다시 받으려면
+//fetch 끝에 then이라는 메서드를 사용해서 데이터를 가져올 수 있음
+//response 라는 데이터가 파라미터로 전달이 됨.
     fetch("/login",{
         method: "POST",
         headers:{
             "Content-Type": "application/json", //내가 보내는 데이터의 타입
         },
         body: JSON.stringify(req),
-    });
+    })
+    .then((res) => res.json())
+    .then(console.log);
 }
 
 

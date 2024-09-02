@@ -2,7 +2,7 @@
 //프론트엔드
 const id = document.querySelector("#id"),
     psword = document.querySelector("#psword"),
-    loginBtn = document.querySelector("button");
+    loginBtn = document.querySelector("#button");
 
 //두 번째로 넘어오는 파라미터는 함수이기에 function을 만들어줘야함
 loginBtn.addEventListener("click", login);

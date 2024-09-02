@@ -9,6 +9,7 @@ const ctrl = require("./home.ctrl");
 //로그인 화면으로 갔을 때는 ctrl의 login 으로 감
 router.get("/", ctrl.output.home);
 router.get("/login", ctrl.output.login);    //출력
+router.get("/register", ctrl.output.register); //회원가입
 router.post("/login", ctrl.process.login);  //처리
 
 
